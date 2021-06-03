@@ -5,4 +5,4 @@ Update-Module -Name Az
 Set-ExecutionPolicy RemoteSigned
 Import-Module Az
 Connect-AzAccount
-3a7cabe6-8f36-4652-84fe-65f0816271bf
+Select-AzSubscription -SubscriptionId '3a7cabe6-8f36-4652-84fe-65f0816271bf'
