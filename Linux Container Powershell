@@ -1,0 +1,5 @@
+New-AzResourceGroup -Name myResourceGroup -Location EastUS
+
+New-AzContainerGroup -ResourceGroupName myResourceGroup -Name mycontainerwindow -Image mcr.microsoft.com/windows/servercore/iis:nanoserver -OsType Windows -DnsNameLabel devopswindows
+
+Get-AzContainerGroup -ResourceGroupName myResourceGroup -Name mycontainer

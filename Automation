@@ -6,3 +6,5 @@ Set-ExecutionPolicy RemoteSigned
 Import-Module Az
 Connect-AzAccount
 Select-AzSubscription -SubscriptionId '3a7cabe6-8f36-4652-84fe-65f0816271bf'
+Get-AzResourceGroup
+Get-AzResourceGroup | Format-Table

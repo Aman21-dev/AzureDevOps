@@ -1,2 +1,4 @@
 devopsjava21@outlook.com
 21devopsjava
+
+$vm = (Get-AzVM -Name "AmanVm" -ResourceGroupName "myResourceGroup")

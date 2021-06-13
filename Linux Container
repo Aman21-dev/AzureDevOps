@@ -3,3 +3,6 @@ az group create --name myResourceGroup --location eastus  # To create Azure myRe
 az container create --resource-group myResourceGroup --name linuxcontainer --image mcr.microsoft.com/azuredocs/aci-helloworld --dns-name-label devopsjava21 --ports 80
 
 az container show --resource-group myResourceGroup --name linuxcontainer --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" --out table
+
+
+New-AzResourceGroupDeployment -ResourceGroupName <resource-group-name> -TemplateFile <path-to-template>
