@@ -2,3 +2,5 @@ devopsjava21@outlook.com
 21devopsjava
 
 $vm = (Get-AzVM -Name "AmanVm" -ResourceGroupName "myResourceGroup")
+
+az ad sp create-for-rbac --name "MyTerraform" --role="Contributor" --scopes="/subscriptions/3a7cabe6-8f36-4652-84fe-65f0816271bf"
